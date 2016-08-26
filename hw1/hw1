@@ -1,0 +1,17 @@
+Annie Sauer
+Auburn userID: aes0051
+filename: hw1
+Development Environment: vim
+
+(a) How does Jack Reeves view programming?
+Reeves views programming as an element of software design.  He argues that the task of creating a program can be done at the same time as the task of designing software. He postulates that programming and designing software don't fall in the realm of engineering as creating and designing hardware do. With C++ the programming of code itself can represent the software design. 
+
+(b) If the author's views are true, why are there not more rigid standards for designing code or writing software?
+Software designs tend to be extremely complex, which makes it very difficult to enforce design standards.   The process of software design usually involves frequent changes to the design and multiple programmers working on the process over time.  Because software designers test and debug code throughout the entire programming process, it isn't necessary to have a rigid standard for what will work in the end. 
+
+(c) According to the author, why are languages like C++ preferred over other programming languages that aren't necessarily object-oriented in nature? 
+C++ has become popular because it is object-oriented and helps make the software design process easier.  In software design the emphasis is on the creation of the code, a long and complex process.  Focusing on data and objects that are used throughout the process and are accounted for as the program is run has made the design process easier to follow. 
+
+(d) According to the author, why do software engineers not adhere as strictly to the same design, refine, and test strategy that other engineering disciplines follow?
+Because software design is so open-ended, there is not a rigid process for testing a design.  Since codes get extremely complex, they are tested and debugged multiple times throughout the programming process.  Software can be tested easily at any time in the process by simply running the program through the compiler.  A bug in a software design may not be as costly as a problem in a hardware design (like a bridge that can't hold the necessary weight).  It is easy and cheap to test software, so software designers don't have to approach the process like other engineers who have risks and costs involved in their testing.
+
