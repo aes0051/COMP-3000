@@ -15,9 +15,9 @@ int main() {
 
 // Identify and initialize local variables.
 double lethalKillMouse = 0.0;
-int weightMouse = 0;
-int weightDieter = 0; // Weight at which the dieter will stop dieting
-int sodasKillDieter = 0; // Number of sodas dieter can drink without dieting
+double weightMouse = 0;
+double weightDieter = 0; // Weight at which the dieter will stop dieting
+double sodasKillDieter = 0; // Number of sodas dieter can drink without dieting
 const double RATE = 0.001; // Portion of sweetener in diet soda
 
 // User Input
