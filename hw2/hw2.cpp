@@ -4,6 +4,7 @@
 // Development Environment: vim, g++, linux
 // Compile: g++ -o hw2 hw2.cpp
 // Sample usage: ./hw2
+// I did not receive any outside help on this assignment (other than talking to Professor Sardinas)
 
 // Compiler pre-directives
  #include <iostream> //This is required for cin and cout
@@ -12,24 +13,26 @@ using namespace std;
 
 int main() {
 
-int amountKillMouse = 0; // Units in grams of artificial sweetener
-int weightMouse = 0; // Units in kilograms
-int weightDieter = 0; // Units in kilograms
-int amountKillDieter = 0; // Calculated later.  Units in grams of diet soda.
-float  RATE  = 0.001; //Proportion of each diet soda that consists of artificial sweeteners.
-// Identify and initialize the necessary variables.
+// Identify and initialize local variables.
+double lethalKillMouse = 0.0;
+int weightMouse = 0;
+int weightDieter = 0; // Weight at which the dieter will stop dieting
+int sodasKillDieter = 0; // Number of sodas dieter can drink without dieting
+const double RATE = 0.001; // Portion of sweetener in diet soda
 
-cout << "Enter the amount of artifial sweetener required to kill the mouse (in grams) " << endl;
-cin >> amountKillMouse;
-cout << "Enter the weight of the mouse (in kilograms) " << endl;
+// User Input
+cout << "What is the amount of artificial sweetener needed to kill a mouse:" << endl;
+cin >> lethalKillMouse;
+cout << "What is the weight of the mouse:  " << endl;
 cin >> weightMouse;
-cout << "Enter the desired weight of the dieter (in kilograms) " << endl;
+cout << "What is the weight of the dieter:  " << endl;
 cin >> weightDieter;
 
+// Calculation of number of sodas that the dieter can drink
+sodasKillDieter = (lethalKillMouse * weightDieter) / (weightMouse * RATE);
 
-amountKillDieter = (amountKillMouse * weightDieter) / (weightMouse * RATE);
-
-cout << "It is possible to drink " << amountKillDieter << " grams of diet soda before dying." << endl;
+// Print results
+cout << "You can drink  " << sodasKillDieter << " diet soda without dying as a result." << endl;
 
 return 0;
 
