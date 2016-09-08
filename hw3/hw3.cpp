@@ -52,9 +52,9 @@ cout << "*****************************************************************" << e
 cout << "          Amortization Table" << endl;
 cout << "*****************************************************************" << endl;
 //Print Headings for each column
-cout << left << setw(10) << "Month" << left << setw(10) << "Balance" << left << setw(10) <<  "Payment" << left << setw(10) << "Rate" << left << setw(10) << "Interest" << left << setw(10) << "Principal" << endl;
+cout << left << setw(10) << "Month" << right << setw(3) <<  " " << left << setw(10) << "Balance" << right << setw(3) << " " << left << setw(10) <<  "Payment" << left << setw(10) << "Rate" << right << setw(3) << " "<< left << setw(10) << "Interest" << right << setw(3) << " " << left << setw(10) << "Principal" << endl;
 //Print first line
-cout << left << setw(10) << month << left << setw(10) <<  balance << left << setw(10) << "N/A" << left << setw(10) << "N/A" << left << setw(10) << "N/A" << left << setw(10) << "N/A" << endl;
+cout << left << setw(10) << month << right << setw(3) << "$" <<  left << setw(10) <<  balance << right << setw(3) << " " << left << setw(10) << "N/A" << left << setw(10) << "N/A" << right << setw(3) << " " << left << setw(10) << "N/A" << right << setw(3) << " " << left << setw(10) << "N/A" << endl;
 
 while ((balance + balance*(monthlyInterestRate/100.0)) > monthlyPayment) {
 interest = (monthlyInterestRate/100.0)*balance;
@@ -62,7 +62,7 @@ principal = monthlyPayment - interest;
 balance = balance - principal;
 month = month+1;
 interestTotal = interestTotal + interest;
-cout << left << setw(10) << month << left << setw(10) << balance << left << setw(10) << monthlyPayment << left << setw(10) << monthlyInterestRate << left << setw(10) << interest << left << setw(10) << principal << endl;
+cout << left << setw(10) << month << right << setw(3) << "$" << left << setw(10) << balance << right << setw(3) << "$" << left << setw(10) << monthlyPayment << left << setw(10) << monthlyInterestRate << right << setw(3) << "$" << left << setw(10) << interest << right << setw(3) << "$" << left << setw(10) << principal << endl;
 }
 
 //Loop breaks for final payment
@@ -72,7 +72,7 @@ principal = balance;
 monthlyPayment = balance + interest;
 balance = 0.00;
 interestTotal = interestTotal + interest;
-cout << left << setw(10) << month << left << setw(10) << balance << left << setw(10) << monthlyPayment << left << setw(10) << monthlyInterestRate << left << setw(10) << interest << left << setw(10) << principal << endl;
+cout << left << setw(10) << month << right << setw(3) << "$" << left << setw(10) << balance << right << setw(3) << "$" << left << setw(10) << monthlyPayment << left << setw(10) << monthlyInterestRate << right << setw(3) << "$" << left << setw(10) << interest << right << setw(3) << "$" << left << setw(10) << principal << endl;
 
 cout << "*****************************************************************" << endl;
 
