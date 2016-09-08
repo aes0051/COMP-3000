@@ -1,5 +1,4 @@
 // Name: Annie Sauer
-// Auburn UserID: aes0051
 // filename: hw2.cpp
 // Development Environment: vim, g++, linux
 // Compile: g++ -o hw2 hw2.cpp
