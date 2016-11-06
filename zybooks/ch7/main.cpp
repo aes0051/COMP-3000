@@ -17,7 +17,7 @@ int quantity2;
 
 cout << "Item 1" << endl;
 cout << "Enter the item name: " << endl;
-cin >> name1;
+getline (cin, name1);
 item1.SetName(name1);
 cout << "Enter the item price: " << endl;
 cin >> price1;
@@ -30,7 +30,7 @@ cin.ignore();
 
 cout << endl << "Item 2" << endl;
 cout << "Enter the item name: " << endl;
-cin >> name2;
+getline (cin, name2);
 item2.SetName(name2);
 cout << "Enter the item price: " << endl;
 cin >> price2;
