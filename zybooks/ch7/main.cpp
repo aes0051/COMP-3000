@@ -28,7 +28,7 @@ item1.SetQuantity(quantity1);
 
 cin.ignore();
 
-cout << "Item 2" << endl;
+cout << endl << "Item 2" << endl;
 cout << "Enter the item name: " << endl;
 cin >> name2;
 item2.SetName(name2);
@@ -38,7 +38,6 @@ item2.SetPrice(price2);
 cout << "Enter the item quantity: " << endl;
 cin >> quantity2;
 item2.SetQuantity(quantity2);
-cout << "Enter the item name: " << endl;
 
 int cost1;
 int cost2;
