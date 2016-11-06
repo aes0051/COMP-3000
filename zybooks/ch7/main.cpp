@@ -48,10 +48,10 @@ cost2 = item2.GetPrice() * item2.GetQuantity();
 
 totalcost = cost1 + cost2;
 
-cout << "TOTAL COST" << endl;
+cout << endl << "TOTAL COST" << endl;
 cout << item1.GetName() << " " << item1.GetQuantity() << " @ $" << item1.GetPrice() << " = $" << cost1 << endl;
 cout << item2.GetName() << " " << item2.GetQuantity() << " @ $" << item2.GetPrice() << " = $" << cost2 << endl;
-cout << endl << "Total: $" << totalcost;
+cout << endl << "Total: $" << totalcost << endl;
 
 
 return 0;
