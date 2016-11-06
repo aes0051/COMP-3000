@@ -7,6 +7,8 @@ class ShoppingCart {
 	public:
 	ShoppingCart();
 	ShoppingCart(string name, string date);
+	void SetCustomerName(string name);
+	void SetCurrentDate(string date);
 	string GetCustomerName();
 	string GetDate();
 	void AddItem(ItemToPurchase);
@@ -16,6 +18,7 @@ class ShoppingCart {
 	int GetCostOfCart();
 	void PrintTotal();
 	void PrintDescriptions();
+	void PrintMenu();
 	private:
 	string customerName;
 	string currentDate;
